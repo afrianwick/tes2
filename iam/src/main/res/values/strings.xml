@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name">IAM</string>
+    <string name="title_activity_iam_home">IamHomeActivity</string>
+    <string name="title_activity_ecorr_home">EcorrHomeActivity</string>
+    <string name="title_activity_wfh_home">WfhHomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_recent_task">Recent Tasks</string>
+    <string name="title_settings">Settings</string>
+    <string name="label_mycalendar">My Calendar</string>
+    <string name="label_inputwork">Input Work List</string>
+    <string name="label_mypersonal">My Personal</string>
+    <string name="label_mycompliance">My Compliance</string>
+    <string name="label_myworklist">My Worklist</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_my_worklist">MyWorklistActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="task_list">Task List</string>
+    <string name="tab_all">All</string>
+    <string name="tab_pending">Pending</string>
+    <string name="tab_approved">Approved</string>
+    <string name="tab_rejected">Rejected</string>
+    <string name="tab_history">Approval history</string>
+    <string name="title_activity_rmj_detail">RmjDetailActivity</string>
+    <string name="tab_jabatan_lama">Jabatan lama</string>
+    <string name="tab_jabatan_baru">Jabatan baru</string>
+    <string name="tab_preview_draft_rmj">Preview Draft RMJ</string>
+    <string name="label_detail">Detail</string>
+    <string name="title_activity_my_personal">My Personal</string>
+    <string name="title_activity_inbox">Inbox</string>
+    <string name="title_activity_payslip">Payslip</string>
+    <string name="title_activity_suratket">Surat Keterangan</string>
+    <string name="hint_type_of_letter">Leave Type</string>
+    <string name="hint_purpose">Purpose</string>
+    <string name="tab_penerimaan">Penerimaan</string>
+    <string name="tab_pemberian">Pemberian</string>
+    <string name="tab_permintaan">Permintaan</string>
+    <string name="label_benefit">My Benefit</string>
+    <string name="label_talent">My Talent</string>
+    <string name="label_my_info">My Info</string>
+    <string name="abel_myteam">My Team</string>
+    <string name="label_mylink">My Link</string>
+    <string name="label_hr_tools">HR Tools</string>
+    <string name="label_people_review">People Review</string>
+    <string name="label_mydocuments">My Document</string>
+    <string name="search_not_found_containing">Did not find data containing: </string>
+    <string name="search_not_found">Data not found</string>
+    <string name="submit_success">Submit success</string>
+    <string name="please_comment">Please type your comment</string>
+    <string name="label_claim_type">Claim Type</string>
+    <string name="label_patient">Patient</string>
+    <string name="label_patient_age">Patient Age</string>
+    <string name="label_claim_amount">Claim Amount</string>
+    <string name="label_granted_amount">Granted Amount</string>
+    <string name="label_bill_date">Bill Date</string>
+    <string name="label_bill_number">Bill Number</string>
+    <string name="string_report_gratifikasi">Report Gratifikasi</string>
+    <string name="penerimaan">Penerimaan</string>
+    <string name="string_pemberian">Pemberian</string>
+    <string name="string_permintaan">Permintaan</string>
+    <string name="visa">VISA</string>
+    <string name="non_visa">NON VISA</string>
+    <string name="string_s_d">s/d</string>
+    <string name="string_code_of_conduct">Code of Conduct</string>
+    <string name="string_prev">Prev</string>
+    <string name="string_next">Next</string>
+    <string name="string_coi"><b>Tidak mempunyai</b> benturan kepentingan dalam melaksanakan tugas, kewajiban dan kewenangan jabatan tersebut di atas di PT Pertamina (Persero). Apabila setelah tanggal ditandatanganinya surat pernyataan ini kemudian timbul keadaan dimana saya memiliki benturan kepentingan atau potensi benturan kepentingan, saya akan segera melaporkan keadaan tersebut kepada Chief Legal Counsel &amp; Compliance, selaku Chief Compliance Officer dengan cara mengisi form berikut. Demikian pernyataan ini dibuat dan ditandatangani untuk memenuhi ketentuan yang berlaku.</string>
+    <string name="string_coi_desc2">Saya bersedia untuk diklarifikasi oleh Pertamina atas pernyataan konflik kepentingan tersebut.\n\nDemikian pernyataan ini dibuat dan ditandatangani untuk memenuhi ketentun mengenai benturan kepentingan sesuai ketentuan yang berlaku.</string>
+    <string name="string_conflict_of_interest">Conflict of Interest</string>
+
+    <string-array name="reference_letter_description_kind">
+        <item>Surat Keterangan Kerja Kemitraan Pendidikan</item>
+        <item>Surat Keterangan Kerja Jaminan Kesehatan</item>
+        <item>Surat Keterangan Kerja (Bahasa Indonesia)</item>
+        <item>Surat Keterangan Kerja (Bahasa Inggris)</item>
+        <item>Surat Keterangan Kerja dengan Upah (Bahasa Indonesia)</item>
+        <item>Surat Keterangan Kerja dengan Upah (Bahasa Inggris)</item>
+    </string-array>
+
+    <string-array name="reference_letter_description">
+        <item>Surat keterangan kemitraan digunakan untuk menerangkan anggota keluarga pekerja agar bisa mengikuti program kerjasama Pendidikan yang telah dibuat pertamina dengan Lembaga Pendidikan tersebut.</item>
+        <item>Surat Keterangan jaminan kesehatan digunakan untuk menerangkan bahwa pekerja tersebut sudah ditanggung oleh program kesehatan pertamina sehingga tidak diperlukan lagi proses pendaftaran ke program benefit lainnya.</item>
+        <item>Surat Keterangan Kerja berisikan informasi yang menerangkan bahwa karyawan tersebut bekerja di pertamina dan posisi yang ditempati oleh pekerja tersebut dalam Bahasa Indonesia.</item>
+        <item>Surat Keterangan Kerja berisikan informasi yang menerangkan bahwa karyawan tersebut bekerja di pertamina dan posisi yang ditempati oleh pekerja tersebut dalam Bahasa Inggris.</item>
+        <item>Surat Keterangan Kerja berisikan informasi yang menerangkan bahwa karyawan tersebut bekerja di pertamina dan posisi yang ditempati dan informasi terkait pendapatan pekerja tersebut dalam Bahasa Indonesia.</item>
+        <item>Surat Keterangan Kerja berisikan informasi yang menerangkan bahwa karyawan tersebut bekerja di pertamina dan posisi yang ditempati dan informasi terkait pendapatan pekerja tersebut dalam Bahasa Inggris.</item>
+    </string-array>
+
+    <string name="disclaimer">Dengan ini saya menyatakan bahwa benar saya mengajukan permintaan penerbitan Surat Keterangan dan saya tidak akan menggunakan dokumen/surat yang diterbitkan Perusahaan untuk tindakan yang melanggar hukum/aturan perundang-undangan yang berlaku. Apabila di kemudian hari ditemukan dan/atau dibuktikan adanya penggunaan dokumen tersebut yang melanggar hukum dan/atau aturan perundang-undangan, saya bersedia menerima sanksi sesuai ketentuan perusahaan yang berlaku.</string>
+
+
+    <string-array name="purpose_id">
+        <item></item>
+        <item>SKET_VISA_BUSINESS_EN</item>
+        <item>SKET_VISA_PERSONAL_EN</item>
+        <item>SKET_VISA_PERSONAL_WITH_FAMILY_EN</item>
+    </string-array>
+
+    <string-array name="purpose_text">
+        <item>Pilih</item>
+        <item>Keperluan Perusahaan - Dinas</item>
+        <item>Keperluan Pribadi - Pekerja</item>
+        <item>Keperluan Pribadi - Pekerja dan Keluarga</item>
+    </string-array>
+
+    <string-array name="progresskegiatan_text">
+        <item>Pilih</item>
+        <item>On Progress</item>
+        <item>Done</item>
+    </string-array>
+
+    <string-array name="leave_type_sket">
+        <item>Surat Keterangan Jalur Kemitraan</item>
+        <item>Surat Keterangan Jaminan Kesehatan</item>
+        <item>Surat Keterangan Tanpa Upah versi Indonesia</item>
+        <item>Surat Keterangan Tanpa Upah versi Inggris</item>
+        <item>Surat Keterangan Upah versi Indonesia</item>
+        <item>Surat Keterangan Upah versi Inggris</item>
+    </string-array>
+
+    <string-array name="leave_type_sket_id">
+        <item>SKET_EDUCATION_ID</item>
+        <item>SKET_MEDICAL_ID</item>
+        <item>SKET_EMPLOYMENT_WITHOUT_SALARY_ID</item>
+        <item>SKET_EMPLOYMENT_WITHOUT_SALARY_EN</item>
+        <item>SKET_EMPLOYMENT_WITH_SALARY_ID</item>
+        <item>SKET_EMPLOYMENT_WITH_SALARY_EN</item>
+    </string-array>
+    
+    <string-array name="mcl_">
+        <item>Kacamata Monofokus : Frame &amp; Lensa</item>
+        <item>Kacamata Bifokus : Frame &amp; Lensa</item>
+        <item>Lensa Monofokus</item>
+        <item>Lensa Bifokus</item>
+        <item>Lensa Kontak</item>
+        <item>Lasik</item>
+        <item>Rawat Jalan Tk I</item>
+        <item>Rawat Jalan Tk II (Specialist)</item>
+        <item>Rawat Inap</item>
+        <item>Orthodonti</item>
+        <item>Prosthodonti</item>
+        <item>Infertilitas</item>
+        <item>Bayi Tabung</item>
+        <item>Alat Bantu Dengar</item>
+        <item>Implan Koklea</item>
+        <item>Protesa</item>
+    </string-array>
+
+    <string-array name="mcl_2">
+        <item>Frame dan Lensa satu fokus yaitu minus atau plus dengan atau tanpa silinder</item>
+    	<item>Frame dan Lensa dua fokus yaitu minus dan plus dengan atau tanpa silinder</item>
+    	<item>Lensa satu fokus yaitu minus atau plus dengan atau tanpa silinder</item>
+    	<item>Lensa dua fokus yaitu minus dan plus dengan atau tanpa silinder</item>
+    	<item>Lensa pengganti kacamata</item>
+        <item>Operasi untuk memperbaiki kelainan rabun mata</item>
+    	<item>Rawat jalan dokter umum, dokter gigi umum dan UGD</item>
+    	<item>Rawat jalan dokter spesialis</item>
+    	<item>Rawat inap</item>
+        <item>Pemasangan dan perawatan kawat gigi</item>
+    	<item>Pembuatan dan pemasangan gigi palsu</item>
+    	<item>Program kehamilan untuk mendapatkan anak</item>
+    	<item>Program infertilitas dengan metode bayi tabung</item>
+    	<item>Alat bantu untuk meningkatkan ketajaman pendengaran</item>
+    	<item>Penanaman Koklea untuk mendapatkan fungsi pendengaran</item>
+    	<item>Alat yang berfungsi untuk menggantikan organ tubuh</item>
+    </string-array>
+
+    <string-array name="berkas_dokumen_mcl">
+        <item>Resume Medis dari dokter yang merawat</item>
+        <item>Kuitansi asli dilengkapi dengan materai/Struk EDC</item>
+        <item>Copy resep obat</item>
+        <item>Resep kacamata/Surat Dokter **</item>
+        <item>Surat Pengantar Medical Claim (print tiket I-AM)</item>
+        <item>Surat Rujukan</item>
+        <item>Surat Jaminan</item>
+        <item>Billing</item>
+    </string-array>
+
+    <string name="label_pin">PIN</string>
+
+    <string name="string_validate_pick_picture">Pick Picture field is still empty</string>
+
+    <string name="coi_mempunyai">Mempunyai benturan kepentingan dalam melaksanakan tugas, kewajiban dan kewenangan jabatan tersebut di atas PT Pertamina (Persero).
+Adapun Konflik Keperluan yang saya miliki adalah sebagai berikut</string>
+
+    <string name="coi_tidak_mempunyai">Tidak mempunyai benturan kepentingan dalam melaksanakan tugas, kewajiban dan kewenangan jabatan tersebut di atas di PT Pertamina (Persero).
+Apabila setelah tanggal ditandatanganinya surat pernyataan ini kemudian timbul keadaan dimana saya memiliki benturan kepentingan atau potensi benturan kepentingan, saya akan segera melaporkan keadaan tersebut kepada Chief Legal Counsel &amp; Compliance selaku Chief Compliance Officer dengan cara mengisi form berikut. Demikian penyataan ini dibuat dan ditandatangani untuk memenuhi ketentuan yang berlaku.</string>
+</resources>

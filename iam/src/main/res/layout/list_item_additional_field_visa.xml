@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true"
+            android:layout_weight="1"
+            android:id="@+id/listItemAdditionalFieldVisaNameTIL">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/listItemAdditionalFieldVisaNameTIET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true"
+            android:layout_weight="1"
+            android:id="@+id/listItemAdditionalFieldVisaPassportTIL">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/listItemAdditionalFieldVisaPassportTIET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Passport"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true"
+            android:id="@+id/listItemAdditionalFieldVisaTypeTIL">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/listItemAdditionalFieldVisaTypeTIET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:inputType="none"
+                android:focusable="false"
+                android:hint="Type"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/button_bg_rounded_green"
+        app:srcCompat="@drawable/ic_add"
+        android:id="@+id/listItemAdditionalFieldVisaActionButton"
+        android:layout_marginBottom="24dp"/>
+
+</LinearLayout>

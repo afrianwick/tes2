@@ -1,0 +1,44 @@
+<resources>
+
+    <style name="ThemeIam" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/iamActionbar</item>
+        <item name="colorPrimaryDark">@color/iamActionbar</item>
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="actionBarStyle">@style/IamActionBarTextWhite</item>
+    </style>
+
+    <style name="IamThemeNoActionbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/iamActionbar</item>
+        <item name="colorPrimaryDark">@color/iamActionbar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/rubik</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Style-->
+    <style name="IamActionBarBgWhite" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">#fff</item>
+    </style>
+    <style name="IamActionBarTextWhite" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/IamActionBarTextStyle</item>
+        <item name="android:background">@color/iamActionbar</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="IamActionBarTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Spinner18dp" parent="Widget.AppCompat.Spinner">
+        <item name="android:textSize">18dp</item>
+    </style>
+</resources>

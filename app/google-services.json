@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "540610389892",
+    "firebase_url": "https://intra-pertamina.firebaseio.com",
+    "project_id": "intra-pertamina",
+    "storage_bucket": "intra-pertamina.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540610389892:android:deecb85c9c4e6315a3dfd1",
+        "android_client_info": {
+          "package_name": "com.pertamina.iam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540610389892-4i4fd3u97pc30r6a31vbof26ffpqkaq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvitFNHkEBYuWVtZW0l7l4l1sYWVW8EK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540610389892-4i4fd3u97pc30r6a31vbof26ffpqkaq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

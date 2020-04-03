@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/eventCalendarParentCL"
+    tools:context=".activity.MyPersonalActivity"
+    android:background="@drawable/bg_accent_tile">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/iamActionbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:srcCompat="@drawable/ic_back" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="Personal Calendar"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp" />
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:id="@+id/personalCalendarCurrentDateButton"
+                    android:text="Current Date"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_bg_rounded_corners_brown"
+                    android:elevation="8dp"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Legend:"
+                    android:textColor="@color/iamBlackText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_bg_rounded_red"
+                        android:padding="4dp"
+                        android:text="Public holiday"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/button_bg_rounded_yellow"
+                        android:padding="4dp"
+                        android:text="Leave"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/button_bg_rounded_green"
+                        android:padding="4dp"
+                        android:text="Training"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/button_bg_rounded_corners_blue"
+                        android:padding="4dp"
+                        android:text="Travel"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prev Year"
+                        android:padding="5dp"
+                        android:id="@+id/calendarPrevYearTV"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:background="@drawable/default_scroll_handle_right"/>
+                    <Button
+                        android:id="@+id/tvSelectedMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:background="@drawable/button_bg_rounded_corners_blue"
+                        android:padding="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Agustus 2019"
+                        android:elevation="4dp"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next Year"
+                        android:padding="5dp"
+                        android:visibility="invisible"
+                        android:id="@+id/calendarNextYearTV"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:background="@drawable/default_scroll_handle_left"/>
+                </LinearLayout>
+
+                <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                    android:id="@+id/compactcalendar_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="visible"
+                    app:compactCalendarBackgroundColor="@android:color/white"
+                    app:compactCalendarCurrentDayBackgroundColor="@color/iamLightYellow"
+                    app:compactCalendarCurrentDayIndicatorStyle="fill_large_indicator"
+                    app:compactCalendarCurrentDayTextColor="@color/iamBlueIcon"
+                    app:compactCalendarCurrentSelectedDayBackgroundColor="@color/iamTab"
+                    app:compactCalendarCurrentSelectedDayTextColor="@android:color/white"
+                    app:compactCalendarDisplayOtherMonthDays="true"
+                    app:compactCalendarEventIndicatorStyle="fill_large_indicator"
+                    app:compactCalendarMultiEventIndicatorColor="@color/iamButton"
+                    app:compactCalendarOtherMonthDaysTextColor="@color/iamLine"
+                    app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="false"
+                    app:compactCalendarTextColor="@color/iamBlackText"
+                    app:compactCalendarTextSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvSelectedDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="17 Agustus"
+                    android:textColor="@color/iamBlackText" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

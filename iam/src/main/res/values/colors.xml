@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blackTransparent">#88000000</color>
+    <color name="portalColorPrimary">@color/white</color>
+    <color name="portalColorPrimaryDark">@color/white</color>
+    <color name="portalColorAccent">@color/blueMoon</color>
+
+    <color name="iamColorPrimary">@color/blueStrike</color>
+    <color name="iamColorPrimaryDark">@color/blueStrike</color>
+    <color name="iamColorAccent">@color/bluePale</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white95">#F2FFFFFF</color>
+    <color name="white67">#ABFFFFFF</color>
+    <color name="white60">#99ffffff</color>
+    <color name="white50">#80ffffff</color>
+    <color name="white33">#54ffffff</color>
+    <color name="white25">#40ffffff</color>
+    <color name="whiteClear">#00ffffff</color>
+
+    <color name="black">#000000</color>
+    <color name="black95">#F2000000</color>
+    <color name="black87">#DE000000</color>
+    <color name="black75">#BF000000</color>
+    <color name="black60">#99000000</color>
+    <color name="black50">#80000000</color>
+    <color name="black45">#73000000</color>
+    <color name="black33">#54000000</color>
+    <color name="black25">#40000000</color>
+    <color name="blackClear">#00000000</color>
+
+    <color name="sbError">#ff0000</color>
+
+    <color name="blueMoon">#408EBA</color>
+    <color name="greenLush">#00A65A</color>
+    <color name="yellowBlunt">#F39C12</color>
+    <color name="redDull">#DD4B39</color>
+
+    <color name="redSlap">#ff0000</color>
+    <color name="blueGloom">#222d32</color>
+
+    <color name="blueStrike">#2C3B41</color>
+    <color name="bluePale">#76BEED</color>
+    <color name="blueWolf">#4A565B</color>
+
+    <color name="greyAction">#8b8b8b</color>
+    <color name="disable">#d5d5d5</color>
+
+    <color name="colorButton">#3C6DB2</color>
+
+    <color name="redDark">#BA313B</color>
+    <color name="blackText">#222D32</color>
+</resources>

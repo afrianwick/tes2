@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="550dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bg_accent_tile"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Apply Filter"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/iamLine" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/cbLev"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Leave Request (LEV)" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/cbPan"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Personal Administration (PAN)" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/cbMcl"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Medical Claim (MCL)" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/cbClv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Cancel Leave Request (CLV)" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/cbSkmj"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Surat Ket MutJab (SKMJ)" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/cbMppk"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="MPPK" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/cbFlc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="FLC" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/cbSsc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="SSC" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/cbDpkp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="DPKP" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/cbMCCR"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="MCCR" />-->
+<!--    </LinearLayout-->>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/filterRV"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scrollbars="none"
+        tools:listitem="@layout/list_item_filter"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/iamLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right">
+
+        <Button
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:background="@drawable/button_bg_rounded_corners_blue_oval"
+            android:text="@android:string/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/tvApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Apply"
+            android:background="@drawable/button_bg_rounded_corners_blue_oval"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

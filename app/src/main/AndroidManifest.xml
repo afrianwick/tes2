@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pertamina.portal">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--    <uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+    <!--    <uses-permission android:name="android.permission.READ_SMS" />-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_pertamina_mobile"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".iam.activity.MyPersonalActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".iam.activity.MyComplianceActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".iam.activity.IamHomeActivity"
+            android:screenOrientation="portrait">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".iam.activity.EcorrHomeActivity"
+            android:screenOrientation="portrait">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".iam.activity.WfhHomeActivity"
+            android:screenOrientation="portrait">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+
+        <activity
+            android:name=".iam.activity.PayslipActivity"
+            android:screenOrientation="portrait">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".activity.PortalHomeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_portal_home"
+            android:theme="@style/IamThemeNoActionbar"></activity>
+        <activity
+            android:name=".iam.activity.worklist.PanDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar"
+            tools:replace="android:theme"></activity>
+
+        <activity
+            android:name=".iam.activity.worklist.MclDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar"></activity>
+        <activity android:name=".iam.activity.MyWorklistActivity"
+            android:screenOrientation="portrait">
+            <!--                        <intent-filter>-->
+            <!--                        <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--                        </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".iam.activity.RmjDetailActivity"
+            android:theme="@style/IamThemeNoActionbar"
+            android:screenOrientation="portrait"
+            tools:replace="android:theme"></activity>
+
+        <activity
+            android:name=".iam.activity.RmjDetailReviewDraftActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar"></activity>
+        <activity
+            android:name=".iam.activity.worklist.RmjDetailApprovalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar"></activity>
+        <activity
+            android:name=".iam.activity.RmjDetailReviewApprovalActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.CreatePinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar">
+            <!--                        <intent-filter>-->
+            <!--                            <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                            <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--                        </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".activity.OTPInputActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar">
+            <!--                        <intent-filter>-->
+            <!--                            <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                            <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--                        </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".activity.OTPRequestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity android:name=".core.activity.BackableActivity" />
+        <activity
+            android:name=".activity.PinInputActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".iam.activity.LeaveRequestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".iam.activity.MyCalendarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar"></activity>
+        <activity
+            android:name=".iam.activity.EventCalendarActivity"
+            android:theme="@style/IamThemeNoActionbar">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <receiver android:name=".services.MessageReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+<!--        <service-->
+<!--            android:name=".services.MyFirebaseMessagingService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+        <service android:name=".firebaseHandler.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

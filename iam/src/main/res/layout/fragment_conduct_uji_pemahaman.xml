@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="Uji Pemahaman Code of Conduct"
+            android:textAllCaps="true"
+            android:textColor="@color/redSlap"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:text="Pilihlah salah satu jawaban dari pertanyaan berikut :"
+            android:textColor="@color/black87"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="16sp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="1. "
+                android:textColor="@color/black87"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Siapa yang wajib mematuhi Code of Conduct Pertamina, pilih jawaban yang benar :"
+                android:textColor="@color/black87"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/coc1RG"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/coc1SalahRB"
+                android:text="Insan Pertamina yaitu Direksi, Dewan Komisaris, pekerja waktu tertentu, pekerja waktu tidak tertentu dan pekarya yang bekerja di lingkungan Pertamina."
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/coc2SalahRB"
+                android:text="Pihak eksternal yang bertindak untuk dan atas nama Pertamina."
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/coc3SalahRB"
+                android:text="Anak Perusahaan dan struktur perusahaan di bawahnya, yaitu badan hukum/usaha lain yang dikendalikan oleh Pertamina baik secara langsung maupun tidak langsung."
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Mitra Kerja yang bekerjasama dengan Pertamina."
+                android:textSize="12sp"
+                android:id="@+id/coc4SalahRB"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/coc1RB"
+                android:text="Semua jawaban di atas benar."
+                android:textSize="12sp"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="16sp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="2. "
+                android:textColor="@color/black87"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Bertindak dan berperilaku dengan integritas berarti :"
+                android:textColor="@color/black87"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/coc2RG">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/coc5SalahRB"
+                android:text="Menghindari situasi apa pun yang mungkin menciptakan konflik antara kepentingan pribadi Insan Pertamina dan kepentingan Perusahaan."
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/coc6SalahRB"
+                android:text="Tidak melakukan perbuatan melanggar hukum dengan maksud memperkaya diri sendiri atau orang lain (perseorangan atau korporasi) yang dapat merugikan keuangan atau perekonomian negara."
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:id="@+id/coc7SalahRB"
+                android:paddingBottom="16dp"
+                android:text="Tidak menawarkan, memberi dan/atau menerima sesuatu yang tidak sesuai dengan Ketentuan Gratifikasi untuk tujuan memperoleh manfaat/imbalan/kontraprestasi dan perlakuan istimewa dari pihak-pihak tersebut."
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/coc8SalahRB"
+                android:text="Mematuhi hukum, peraturan dan undang-undang, baik yang berlaku pada wilayah setempatnya berada/ditugaskan, maupun pada tingkat nasional dan internasional termasuk peraturan internal Perusahaan."
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/coc9SalahRB"
+                android:text="Tidak membocorkan data dan informasi rahasia apapun kepada pihak ketiga (baik secara langsung maupun tidak langsung) berkenaan dengan transaksi bisnis atau informasi internal Pertamina lainnya"
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/coc2RB"
+                android:text="Semua jawaban di atas benar."
+                android:textSize="12sp"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="16sp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="3. "
+                android:textColor="@color/black87"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Komitmen Terhadap Pelanggan dan Produk"
+                android:textColor="@color/black87"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/coc3RG">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/coc10SalahRB"
+                android:text="Menempatkan pelanggan/konsumen sebagai mitra strategis."
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:id="@+id/coc11SalahRB"
+                android:paddingBottom="16dp"
+                android:text="Memperlakukan pelanggan dengan adil dan jujur dan dengan cara yang memenuhi seluruh ketentuan hukum yang berlaku dan sesuai dengan praktik bisnis yang baik"
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:id="@+id/coc12SalahRB"
+                android:paddingBottom="16dp"
+                android:text="Produk dan layanan yang diberikan oleh Pertamina merupakan subjek standar keamanan yang tinggi. Pertamina berusaha untuk menghindar dari resiko terhadap manusia dan lingkungan, serta kerugian atau kerusakan yang disebabkan oleh produk Perusahaan."
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:id="@+id/coc3RB"
+                android:text="Semua jawaban di atas benar."
+                android:textSize="12sp"/>
+
+        </RadioGroup>
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:fontFamily="@font/rubik_medium"-->
+<!--            android:gravity="start"-->
+<!--            android:text="Note :"-->
+<!--            android:textColor="@color/black87"-->
+<!--            android:textSize="12sp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="start"-->
+<!--            android:text="Tombol Submit akan aktif setelah pekerja menjawab pertanyaan dengan benar"-->
+<!--            android:textColor="@color/black87"-->
+<!--            android:textSize="12sp"/>-->
+
+    </LinearLayout>
+
+</ScrollView>

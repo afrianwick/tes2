@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="Pernyataan Tidak Berbenturan Kepentingan"
+            android:textAllCaps="true"
+            android:textColor="@color/redSlap"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:text="Definisi konflik kepentingan sebagaimana disebutkan dalam Pedoman Konflik Kepentingan (Conflict of Interest) No. A-002/NO0300/2009-So adalah situasi di mana seorang Insan Pertamina yang mendapatkan kekuasaan dan kewenangan atau patut diduga memiliki kepentingan pribadi atas setiap penggunaan wewenang yang dimilikinya sehingga dapat mempengaruhi kualitas dan kinerja yang seharusnya.\n\nSaya paham bentuk-bentuk konflik Kepentingan adalah sebagaimana di bawah namun tidak terbatas pada:"
+            android:textColor="@color/black87"
+            android:textSize="12sp"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/coi1CB"
+            android:text="Melaksanakan jasa apapun dan/atau memiliki peran apapun dalam perusahaan lain dan/atau usaha pesaing yang sedang atau akan melakukan kerjasama usaha dengan PERTAMINA;"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/coi2CB"
+            android:layout_marginTop="16dp"
+            android:text="Memiliki kepentingan ekonomi secara langsung maupun tidak langsung terhadap perusahaan atau organisasi manapun yang saat ini sedang melakukan kerjasama dengan PERTAMINA atau ingin melakukan kerjasama dengan PERTAMINA;"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/coi3CB"
+            android:layout_marginTop="16dp"
+            android:text="Memiliki anggota keluarga atau teman yang memiliki kepentingan ekonomi secara langsung maupun tidak langsung terhadap perusahaan atau organisasi yang saat ini melakukan usaha dengan PERTAMINA;"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/coi4CB"
+            android:layout_marginTop="16dp"
+            android:text="Melakukan transaksi dan/atau menggunakan harta/fasilitas PERTAMINA untuk kepentingan din sendii, keluarga, atau golongan;"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/coi5CB"
+            android:layout_marginTop="16dp"
+            android:text="Mewakili PERTAMINA dalam transaksi dengan perusahaan lain di mana SAYA atau anggota keluarga SAYA atau teman SAYA memiliki kepentingan;"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/coi6CB"
+            android:layout_marginTop="16dp"
+            android:text="Menerima hadiah, uang atau hiburan dan pemasok atau mitra usaha, atau dan agen manapun atau bertindak sebagai atau mewakili pemasok atau mitra usaha dalam transaksinya dengan PERTAMINA, selain daripada yang diuraikan dalam kebijakan PERTAMINA mengenai Hadiah dan Hiburan;"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/coi7CB"
+            android:layout_marginTop="16dp"
+            android:text="Menggunakan informasi rahasia dan data bisnis PERTAMINA untuk kepentingan pribadi atau dengan cara yang merugikan kepentingan PERTAMINA;"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/coi8CB"
+            android:layout_marginTop="16dp"
+            android:text="Mengungkapkan kepada individu atau organisasi atau p hak manapun di luar PERTAMINA setiap informasi, program data keuangan formula proses atau Know-How rahasia milik PERTAMINA, atau yang dikembangan oleh SAYA dalam memenuh tanggung jawab SAYA terhadap PERTAMINA;"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/coi9CB"
+            android:layout_marginTop="16dp"
+            android:text="Melakukan setiap tindakannya yang tidak disebut secara spesifik di atas ini yang dianggap merugikan bag kepentingan PERTAMINA;"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:text="Note : Agar mencentang seluruh pernyataan di atas"
+            android:textColor="@color/black87"
+            android:fontFamily="@font/rubik_bold"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_bg_rounded_corners_blue"
+            android:text="Next"
+            android:visibility="invisible"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

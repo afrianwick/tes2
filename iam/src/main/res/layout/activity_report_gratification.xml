@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_accent_tile"
+    tools:ignore="ContentDescription,AutoFill,LabelFor">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/blueStrike">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ic_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="?selectableItemBackgroundBorderless"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_back"
+                app:tint="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_report_gratifikasi"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blueWolf"
+            app:tabBackground="@color/blueWolf"
+            app:tabIndicatorColor="@color/bluePale"
+            app:tabIndicatorHeight="8dp"
+            android:id="@+id/tabs"
+            app:tabSelectedTextColor="@color/bluePale"
+            app:tabTextColor="@color/white67">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_list_penerimaan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/penerimaan"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_list_pemberian"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/string_pemberian"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_list_permintaan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/string_permintaan"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/view_pager"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/iamColorPrimary"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/field_range_start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="Periode Dari"
+                android:clickable="true"
+                android:focusable="false"
+                android:background="?selectableItemBackground"
+                android:imeOptions="actionNext"
+                android:inputType="none"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/string_s_d"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/field_range_end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="?selectableItemBackground"
+                android:imeOptions="actionNext"
+                android:inputType="none"
+                android:clickable="true"
+                android:hint="Periode Ke"
+                android:focusable="false"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_vertical"
+            android:text="Cari"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_bg_rounded_green"/>
+
+    </LinearLayout>
+
+</LinearLayout>

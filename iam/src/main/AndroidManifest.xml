@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pertamina.portal.iam">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--    <uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+    <!--    <uses-permission android:name="android.permission.READ_SMS" />-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application>
+        <activity android:name=".activity.InputPinPayslipActivity"
+            android:theme="@style/IamThemeNoActionbar"></activity>
+        <activity
+            android:name=".activity.PanDpkpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LeaveReqAddDestination2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.LeaveReqAddReviewerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.LeaveReqAddParticipantActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.LeaveReqActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.worklist.ClvActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.LeaveReqAddDestinationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.LeaveRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EventCalendarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity android:name=".activity.MyCalendarActivity" />
+        <activity
+            android:name=".activity.RmjDetailActivity"
+            android:label="@string/title_activity_rmj_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.worklist.SkmjDetailApprovalActivity"
+            android:label="@string/title_activity_rmj_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity android:name=".activity.RmjDetailReviewDraftActivity" />
+        <activity
+            android:name=".activity.MyWorklistActivity"
+            android:label="@string/title_activity_my_worklist"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.IamHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.EcorrHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.WfhHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+
+        <activity
+            android:name=".activity.worklist.PanDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.SkmjDetailReviewApprovalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.MyPersonalActivity"
+            android:label="@string/title_activity_my_personal"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.InboxActivity"
+            android:label="@string/title_activity_inbox"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.PayslipActivity"
+            android:label="@string/title_activity_payslip"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.SuratKetActivity"
+            android:label="@string/title_activity_suratket"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.ReqSuratKetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.ReqSuratVisiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.ReqWorkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.MyComplianceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.InputGratifikasiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.MyDocumentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.DokumenPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.worklist.LevDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.worklist.SuratKetVisaHRApprovalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.worklist.PanDetailGenericActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.worklist.MclClaimFormActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.worklist.MppkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.ReportGratifikasiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.CodeOfConductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.ConflictOfInterestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.SuratKeteranganDeskripsiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.HistorySuratKetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.worklist.MCRActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.worklist.MCRDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity
+            android:name=".activity.worklist.AHEActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamThemeNoActionbar" />
+        <activity android:name=".activity.WebViewA"/>
+    </application>
+
+</manifest>

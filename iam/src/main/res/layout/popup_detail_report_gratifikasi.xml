@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    tools:ignore="ContentDescription">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_report_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/black87"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/btn_close"
+            tools:text="31 Nov 2019"/>
+
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/black87"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/txt_report_date"
+            tools:text="Fajar Andika"/>
+
+        <TextView
+            android:id="@+id/txt_user_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/rubik"
+            android:lines="1"
+            android:textColor="@color/black87"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_user"
+            tools:text="749284"/>
+
+        <TextView
+            android:id="@+id/txt_user_position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black87"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_user_number"
+            app:layout_constraintTop_toTopOf="@id/txt_user_number"
+            tools:text="Analyst Mobility System"/>
+
+        <TextView
+            android:id="@+id/txt_user_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/rubik"
+            android:textColor="@color/black87"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/txt_user_position"
+            tools:text="Kantor Pusat"/>
+
+        <TextView
+            android:id="@+id/txt_guide_report_entry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/rubik_italic"
+            android:textColor="@color/black45"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_user_company"
+            tools:text="Alasan Gratifikasi" />
+
+        <TextView
+            android:id="@+id/txt_report_entry_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_italic"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_guide_report_entry_date"
+            app:layout_constraintTop_toTopOf="@id/txt_guide_report_entry_date"
+            tools:text="Alasan Gratifikasi" />
+
+        <TextView
+            android:id="@+id/txt_report_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/rubik_medium_italic"
+            android:textColor="@color/black87"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/txt_report_entry_date"
+            tools:text="Ada / Tidak ada Gratifikasi"/>
+
+        <TextView
+            android:id="@+id/txt_guide_report_grat_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/rubik_italic"
+            android:lines="1"
+            android:textColor="@color/black45"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_report_status"
+            tools:text="Nilai Gratifikasi" />
+
+        <TextView
+            android:id="@+id/txt_report_grat_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_italic"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_guide_report_grat_value"
+            app:layout_constraintTop_toTopOf="@id/txt_guide_report_grat_value"
+            tools:text="-----" />
+
+        <TextView
+            android:id="@+id/txt_guide_report_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/rubik_italic"
+            android:textColor="@color/black45"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/txt_guide_report_grat_value"
+            app:layout_constraintTop_toBottomOf="@id/txt_report_grat_value"
+            tools:text="Jumlah" />
+
+        <TextView
+            android:id="@+id/txt_report_grat_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_italic"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/txt_report_grat_value"
+            app:layout_constraintStart_toEndOf="@id/txt_guide_report_amount"
+            app:layout_constraintTop_toTopOf="@id/txt_guide_report_amount"
+            tools:text="-----" />
+
+        <TextView
+            android:id="@+id/txt_guide_report_grat_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/rubik_italic"
+            android:textColor="@color/black45"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/txt_guide_report_amount"
+            app:layout_constraintTop_toBottomOf="@id/txt_report_grat_amount"
+            tools:text="Jenis" />
+
+        <TextView
+            android:id="@+id/txt_report_grat_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_italic"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/txt_report_grat_amount"
+            app:layout_constraintStart_toEndOf="@id/txt_guide_report_grat_type"
+            app:layout_constraintTop_toTopOf="@id/txt_guide_report_grat_type"
+            tools:text="-----" />
+
+        <TextView
+            android:id="@+id/txt_guide_report_grat_objectee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/rubik_italic"
+            android:textColor="@color/black45"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/txt_guide_report_grat_type"
+            app:layout_constraintTop_toBottomOf="@id/txt_report_grat_type"
+            tools:text="Pemberi / Peminta / Penerima" />
+
+        <TextView
+            android:id="@+id/txt_report_grat_objectee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_italic"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/txt_report_grat_type"
+            app:layout_constraintStart_toEndOf="@id/txt_guide_report_grat_objectee"
+            app:layout_constraintTop_toTopOf="@id/txt_guide_report_grat_objectee"
+            tools:text="-----" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_report_grat_objectee">
+
+            <TextView
+                android:id="@+id/txt_report_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/rubik_italic"
+                android:textColor="@color/black45"
+                android:textSize="14sp"
+                tools:text="Alasan Gratifikasi" />
+
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="4dp"
+            android:adjustViewBounds="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/black"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

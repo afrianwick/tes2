@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="start"
+            android:text="Saya, yang bertanda tangan dibawah ini:"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="75sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium_italic"
+                android:gravity="start"
+                android:text="Nama"
+                android:textColor="@color/black87"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="John Smith"
+                android:id="@+id/coiNameTV"
+                android:textColor="@color/black87"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="75sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium_italic"
+                android:gravity="start"
+                android:text="Nopek"
+                android:textColor="@color/black87"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="98871287"
+                android:id="@+id/coiNopekTV"
+                android:textColor="@color/black87"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="75sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium_italic"
+                android:gravity="start"
+                android:text="Jabatan"
+                android:textColor="@color/black87"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:id="@+id/coiJabatanTV"
+                android:text="Analyst Mobility System"
+                android:textColor="@color/black87"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="start"
+            android:text="Dengan ini menyatakan bahwa saya secara pribadi:"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/coiRadionGroup">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coiTidakMempunyaiRB"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tidak Mempunyai"
+                        android:id="@+id/coiTidakMempunyaiTV"
+                        android:textColor="@color/black87"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Form Ubah Kepentingan"
+                        android:textColor="@color/blueMoon"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        android:id="@+id/coiFormUbahKepentinganTV"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coiMempunyaiRB"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mempunyai"
+                        android:id="@+id/coiMempunyaiTV"
+                        android:textColor="@color/black87"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/coiMempunyaiET"
+                        android:hint="Tulis Kepentingan"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="start"
+            android:text="@string/string_coi_desc2"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Lokasi"
+                android:id="@+id/coiLokasiET"
+                android:textSize="14sp"/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="start"
+                android:id="@+id/coiDateTV"
+            android:text=", 01 Agustus 2019"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="start"
+            android:text="Yang Membuat Pernyataan,"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/black33"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="75sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium_italic"
+                android:gravity="start"
+                android:text="Nama"
+                android:textColor="@color/black87"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="John Smith"
+                android:id="@+id/coiName2TV"
+                android:textColor="@color/black87"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="75sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium_italic"
+                android:gravity="start"
+                android:text="Jabatan"
+                android:textColor="@color/black87"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Analyst Mobility System"
+                android:textColor="@color/black87"
+                android:id="@+id/coiJabatan2TV"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_download_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:visibility="invisible"
+            android:background="@drawable/button_bg_rounded_corners_blue"
+            android:text="Download dan Kirim ke Admin"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

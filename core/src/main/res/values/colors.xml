@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="iamRed">#D50000</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="iamButton">#3C6DB2</color>
+    <color name="iamActionbar">#2C3B41</color>
+    <color name="iamBlueIcon">#408EBA</color>
+    <color name="iamGreenLight">#399600</color>
+    <color name="iamYellowSmooth">#FFAB00</color>
+    <color name="iamTab">#4A565B</color>
+    <color name="imaHintSearch">#707070</color>
+    <color name="iamIndicatorColor">#76BEED</color>
+    <color name="iamLine">#bfbfbf</color>
+    <color name="iamBlack67">#AA000000</color>
+    <color name="iamBlack16">#66000000</color>
+    <color name="iamBlackText">#222D32</color>
+    <color name="iamYelow">#FFAB00</color>
+    <color name="iamBrown">#C46C00</color>
+    <color name="iamLightYellow">#FCF8E3</color>
+    <color name="iamBluePekat">#3F63C3</color>
+    <color name="iamBgActivity">#F5F5F5</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>
